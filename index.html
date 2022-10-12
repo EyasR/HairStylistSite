@@ -33,10 +33,11 @@
 								
 								<li><a href="#portfolio">Portfolio</a></li>
 								<li><a href="#services">Services</a></li>
-                                <li><a href="#home">About Sami</a></li>
+                                <li><a href="#contact">Booking</a></li>
                                 <li><a href="#newclients">New Clients</a></li>
-								<li><a href="#contact">Booking</a></li>
-                                <li><a href="#test">reviews</a></li>
+                                <li><a href="#reviews">reviews</a></li>
+                                <li><a href="#home">About Sami</a></li>
+                                
 								<!--<li><a href="#elements">Elements</a></li>-->
 							</ul>
 						</nav>
@@ -51,6 +52,8 @@
 								<span class="image main"><img src="images/pic01.jpg" alt="" /></span>
 								<p>I am Samantha Knowles, the most badass hairstylist on the planet. I operate my business out of Winslow Salon, located in Kirkland Washington. I am passionate about hair
                                 and blah blah blah. maybe something about being the president of COWU</p>
+                                
+                                <blockquote>a cute quote that has something to do with self care or hair making you feel good about yourself...</blockquote>
 							</article>
 
 						<!-- Portfolio -->
@@ -64,8 +67,8 @@
 							</article>
                             
                             						<!-- Portfolio -->
-							<article id="test">
-								<h2 class="major">Test</h2>
+							<article id="reviews">
+								<h2 class="major">Reviews</h2>
 								<span class="image main"><img src="images/pic02.jpg" alt="" /></span>
 								<span class="yelp-review" data-review-id="aaD9VsYyNPv3yQh734WGUQ" data-hostname="www.yelp.com">Read <a href="https://www.yelp.com/user_details?userid=ViNmU9SmC5QD6_lW5LOcOg" rel="nofollow noopener">Susan T.</a>'s <a href="https://www.yelp.com/biz/winslow-salon-kirkland?hrid=aaD9VsYyNPv3yQh734WGUQ" rel="nofollow noopener">review</a> of <a href="https://www.yelp.com/biz/szgVXfiLBbt22L6XUWArtw" rel="nofollow noopener">Winslow Salon</a> on <a href="https://www.yelp.com" rel="nofollow noopener">Yelp</a><script src="https://www.yelp.com/embed/widgets.js" type="text/javascript" async></script></span>
                                 <br/>
@@ -237,9 +240,16 @@
                                             <input type="text" class="form-control" name="phone" id="phoneNumber" placeholder="+0 (000) 000-0000">
 										</div>
                                         <div class="field">
-											<label for="comments" class="form-label">Service(s) interested in</label>
-                                            <textarea class="form-control" id="services" name="services" rows="1" placeholder="haircut" required></textarea>
-										</div>
+                                            <input type="text"  class="form-control"  id="services" name="services" rows="1" list="hairservices" placeholder="Haircut" required/>
+                                                <datalist id="hairservices">
+                                                    <option value="Haircut">Haircut</option>
+                                                    <option value="Color">Color</option>
+                                                    <option value="Color Correction">Color Correction</option>
+                                                    <option value="Treatment">Treatment</option>
+                                                    <option value="Blow out">Blow out</option>
+                                                    <option value="Updo">Updo</option>
+                                            </datalist>
+                                        </div>
 										<div class="field">
 											<label for="comments" class="form-label">Additional Comments*</label>
                                             <textarea class="form-control" id="comments" name="comments" rows="3" required></textarea>
